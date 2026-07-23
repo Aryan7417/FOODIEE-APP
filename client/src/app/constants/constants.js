@@ -2,72 +2,59 @@ export const Categoriess = [
   {
     id: 1,
     name: "Pizza",
-    image: "https://picsum.photos/200?random=1",
-  },
-  {
-    id: 2,
-    name: "Burger",
-    image: "https://picsum.photos/200?random=2",
-  },
-  {
-    id: 3,
-    name: "Biryani",
-    image: "https://picsum.photos/200?random=3",
+    image: require("../../../assets/images/head/pizza.jpg"),
   },
   
+
   
-  {
-    id: 6,
-    name: "North Indian",
-    image: "https://picsum.photos/200?random=6",
-  },
+  
   {
     id: 7,
     name: "Sandwich",
-    image: "https://picsum.photos/200?random=7",
+    image: require("../../../assets/images/head/sandwitch.jpg"),
   },
   {
     id: 8,
     name: "Rolls",
-    image: "https://picsum.photos/200?random=8",
+    image: require("../../../assets/images/head/rool.jpg"),
   },
   {
     id: 9,
     name: "Pasta",
-    image: "https://picsum.photos/200?random=9",
+    image: require("../../../assets/images/head/pasta.jpg"),
   },
   {
     id: 10,
     name: "Momos",
-    image: "https://picsum.photos/200?random=10",
+    image: require("../../../assets/images/head/momo.jpg"),
   },
   
   {
     id: 12,
     name: "Ice Cream",
-    image: "https://picsum.photos/200?random=12",
+    image: require("../../../assets/images/head/icecreem.jpg"),
   },
   {
     id: 13,
     name: "Bakery",
-    image: "https://picsum.photos/200?random=13",
+    image: require("../../../assets/images/head/barery.jpg"),
   },
   {
     id: 14,
     name: "Juices",
-    image: "https://picsum.photos/200?random=14",
+    image: require("../../../assets/images/head/juices.jpg"),
   },
   
  
   {
     id: 17,
     name: "Healthy",
-    image: "https://picsum.photos/200?random=17",
+    image: require("../../../assets/images/head/healty.jpg"),
   },
   {
     id: 18,
     name: "Salads",
-    image: "https://picsum.photos/200?random=18",
+    image: require("../../../assets/images/head/salasd.jpg"),
   },
   {
     id: 19,
@@ -77,7 +64,7 @@ export const Categoriess = [
   {
     id: 20,
     name: "Street Food",
-    image: "https://picsum.photos/200?random=20",
+    image: require("../../../assets/images/head/street food.jpg"),
   },
 ];
 
@@ -172,3 +159,4 @@ export const featured = {
     },
   ],
 };
+

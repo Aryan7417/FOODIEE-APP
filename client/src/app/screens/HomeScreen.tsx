@@ -41,6 +41,10 @@ const HomeScreen = () => {
         <Categories/>
 
 
+
+        {/* features */}
+
+
       </ScrollView>
       </SafeAreaView>
   )

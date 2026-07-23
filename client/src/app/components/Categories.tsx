@@ -1,8 +1,11 @@
 import { View, Text, ScrollView, Touchable, TouchableOpacity } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import {Categoriess} from '../constants/constants.js'
+import { Image } from 'expo-image'
 
 const Categories = () => {
+  const [activeCat ,setActiveCat] = useState(false)
+  
     console.warn("Categories:", Categoriess.length)
   return (
 
@@ -17,14 +20,22 @@ const Categories = () => {
       >
         {
             Categoriess.map((category,index)=>{
+              let isActive = category.id == activeCat
+              let btnClass = isActive? 'bg-gray-600' : 'bg-gray-200'
+              let textClass = isActive ? 'font-semibold text-gray-800' : 'text-gray-500'
                 return (
                     <View key={index} className='flex justify-center items-center mr-6' >
                         <TouchableOpacity 
-                        className='p-1 rounded-s-full shadow bg-gray-200'
+                        onPress={()=>setActiveCat(category.id)}
+                        className={'p-1 rounded-full shadow ' +btnClass}
                         >
-                            <Text>{category.name}</Text>
+                          <Image style={{width:45 , height:45 , borderRadius:28 } }
+                          
+                          source={category.image}
+                          />
 
                         </TouchableOpacity>
+                            <Text className={'text-sm'+textClass}>{category.name}</Text>
                         
                     </View>
                 )
