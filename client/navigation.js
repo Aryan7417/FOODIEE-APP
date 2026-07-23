@@ -22,7 +22,7 @@ const Navigation = () => {
       
       >
         <Stack.Screen  name="Home" component={HomeScreen}  />
-        <Stack.Screen  name="Restorenet" component={RestronScreen}  />
+        <Stack.Screen  name="RestronScreen" component={RestronScreen}  />
       </Stack.Navigator>
     </NavigationContainer>
 
