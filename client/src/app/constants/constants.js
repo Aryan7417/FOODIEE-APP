@@ -76,7 +76,7 @@ export const featured = {
     {
       id: 1,
       name: "Papa John's",
-      image: null,
+      image:  require("../../../assets/images/restaurants/4.jpg"),
       description: "Hot and spicy pizzas with fresh ingredients.",
       lng: 38.2145602,
       lat: -85.5324269,
@@ -104,7 +104,7 @@ export const featured = {
     {
       id: 2,
       name: "Burger King",
-      image:null,
+      image: require("../../../assets/images/restaurants/2.jpg"),
       description: "Fresh burgers with crispy fries.",
       lng: 38.245214,
       lat: -85.542786,
@@ -132,7 +132,7 @@ export const featured = {
     {
       id: 3,
       name: "Biryani House",
-      image: null,
+      image:  require("../../../assets/images/restaurants/5.jpg"),
       description: "Authentic Hyderabadi biryani.",
       lng: 38.225641,
       lat: -85.518764,
