@@ -10,6 +10,7 @@ import HomeScreen from './src/app/screens/HomeScreen'
 import RestronScreen from './src/app/screens/RestronScreen'
 import CardScreen from '@/app/screens/CardScreen';
 import OrderPrepairings from '@/app/screens/OrderPrepairing';
+import DeliveryScreem from '@/app/screens/DeliveryScreem';
 
 
 
@@ -27,6 +28,7 @@ const Navigation = () => {
         <Stack.Screen name="RestronScreen" component={RestronScreen} />
         <Stack.Screen name="Cart" options={{ presentation: 'modal' }} component={CardScreen} />
         <Stack.Screen name="OrderPrepairing" options={{ presentation: 'fullScreenModal' }} component={OrderPrepairings} />
+        <Stack.Screen name="Delivery" options={{ presentation: 'fullScreenModal' }} component={DeliveryScreem} />
       </Stack.Navigator>
     </NavigationContainer>
 
