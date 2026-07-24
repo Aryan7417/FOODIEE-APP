@@ -5,6 +5,7 @@ import * as Icon from "react-native-feather"
 import { themeColors } from '../theme/theme'
 import DishRow from '../components/DishRow.tsx'
 import CartIcon from '../components/cartIcon'
+import { StatusBar } from 'expo-status-bar'
 
 
 
@@ -17,7 +18,10 @@ const RestronScreen = () => {
   //console.warn('')
   return (
     <View>
+      
       <CartIcon/>
+      <StatusBar style='light'  />
+
       <ScrollView>
         <View className='relative' >
           <Image className='w-full h-72' source={item.image}   />
